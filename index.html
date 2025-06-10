@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -9,28 +9,33 @@
 </head>
 
 <body>
-  <!--u can used items-center but the next div is set to flex so u can center and row the element-->
-  <div class="bg-black w-full h-20 flex justify-center items-center">
-    <h1 class="text-white font-bold text-3xl relative right-80">Logo</h1>
-    <ul class="text-white flex text-xl">
-      <li>
-        <a href="#" class="hover:bg-indigo-500 px-6 py-6">Home</a>
-      </li>
-      <li>
-        <a href="#" class="hover:bg-indigo-500 px-6 py-6">About</a>
-      </li>
-      <li>
-        <a href="#" class="hover:bg-indigo-500 px-6 py-6">Products</a>
-      </li>
-      <li>
-        <a href="#" class="hover:bg-indigo-500 px-6 py-6">Contact</a>
-      </li>
-    </ul>
-    <input type="search" placeholder="Search..." class="bg-gray-500 rounded-2xl px-2 py-1 relative left-20">
-    <img
-      src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNOS41IDNBNi41IDYuNSAwIDAgMSAxNiA5LjVjMCAxLjYxLS41OSAzLjA5LTEuNTYgNC4yM2wuMjcuMjdoLjc5bDUgNWwtMS41IDEuNWwtNS01di0uNzlsLS4yNy0uMjdBNi41MiA2LjUyIDAgMCAxIDkuNSAxNkE2LjUgNi41IDAgMCAxIDMgOS41QTYuNSA2LjUgMCAwIDEgOS41IDNtMCAyQzcgNSA1IDcgNSA5LjVTNyAxNCA5LjUgMTRTMTQgMTIgMTQgOS41UzEyIDUgOS41IDUiLz48L3N2Zz4="
-      alt="" width="" height="" class="relative left-12">
-  </div>
+  <header class="bg-black text-white flex">
+    <div>
+      <a href="#">Ecommerce</a> <!--logo-->
+    </div>
+    <nav> <!--nav bar-->
+      <ul class="grid grid-flow-col">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Something</a></li>
+      </ul>
+    </nav>
+    <nav> <!--another nav bar-->
+      <ul>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">My Account</a> <!--inside it another list-->
+          <ul>
+            <li><a href="#">My Profile</a></li>
+            <li><a href="#">Watchlist</a></li> <!--this is the list-->
+            <li><a href="#">Orders</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li> <!--end list of my account-->
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
 </body>
 
 </html>
